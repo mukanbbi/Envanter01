@@ -77,6 +77,8 @@
             this.cbMakina = new System.Windows.Forms.ComboBox();
             this.cbDepartman = new System.Windows.Forms.ComboBox();
             this.cbFirmaAdi = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgwBilgisayar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -88,9 +90,12 @@
             this.dgwBilgisayar.Name = "dgwBilgisayar";
             this.dgwBilgisayar.Size = new System.Drawing.Size(1283, 227);
             this.dgwBilgisayar.TabIndex = 1;
+            this.dgwBilgisayar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgwBilgisayar_CellClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblId);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnSil);
             this.groupBox1.Controls.Add(this.btnGuncelle);
             this.groupBox1.Controls.Add(this.bntEkle);
@@ -156,6 +161,7 @@
             this.btnSil.TabIndex = 7;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -589,6 +595,24 @@
             this.cbFirmaAdi.TabIndex = 0;
             this.cbFirmaAdi.ValueMember = "Id";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(966, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(16, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Id";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(990, 63);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(13, 13);
+            this.lblId.TabIndex = 9;
+            this.lblId.Text = "0";
+            // 
             // BilgisayarYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -657,5 +681,7 @@
         private System.Windows.Forms.ComboBox cbMakina;
         private System.Windows.Forms.ComboBox cbDepartman;
         private System.Windows.Forms.ComboBox cbFirmaAdi;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label label6;
     }
 }

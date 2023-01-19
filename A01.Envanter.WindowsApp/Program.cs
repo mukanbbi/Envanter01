@@ -16,7 +16,7 @@ namespace A01.Envanter.WindowsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BilgisayarYonetimi());
+            Application.Run(new DepartmanYonetimi());
         }
     }
 }

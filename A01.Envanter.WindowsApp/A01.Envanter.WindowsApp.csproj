@@ -62,6 +62,18 @@
     <Compile Include="BilgisayarYonetimi.Designer.cs">
       <DependentUpon>BilgisayarYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="DepartmanYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmanYonetimi.Designer.cs">
+      <DependentUpon>DepartmanYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DomainYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DomainYonetimi.Designer.cs">
+      <DependentUpon>DomainYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MakinaYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BilgisayarYonetimi.resx">
       <DependentUpon>BilgisayarYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmanYonetimi.resx">
+      <DependentUpon>DepartmanYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DomainYonetimi.resx">
+      <DependentUpon>DomainYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MakinaYonetimi.resx">
       <DependentUpon>MakinaYonetimi.cs</DependentUpon>

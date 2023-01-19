@@ -71,6 +71,16 @@ namespace A01.Envanter.WindowsApp
             cbMarka.DisplayMember = "Adi";
             cbMarka.ValueMember = "Id";
         }
+        void Temizle()
+        {
+            var nesneler = groupBox1.Controls.OfType<TextBox>();
+            foreach (var item in nesneler)
+            {
+                item.Clear();
+            }
+
+        }
+
 
         private void BilgisayarYonetimi_Load(object sender, EventArgs e)
         {
@@ -109,6 +119,8 @@ namespace A01.Envanter.WindowsApp
                 );
             if (sonuc > 0)
             {
+
+                Temizle();
                 Yukle();
                 mesajlar.MesajEklendi();
             }
@@ -116,6 +128,106 @@ namespace A01.Envanter.WindowsApp
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
+            if (lblId.Text == "0")
+            {
+                mesajlar.MesajKayitSec();
+            }
+            else
+            {
+                int sonuc = manager.Update(
+                new Bilgisayar
+                {
+                    Id = Convert.ToInt32(lblId.Text),
+                    DepartmanId = Convert.ToInt32(cbDepartman.SelectedValue),
+                    EklemeTarihi = dateEklemeTarihi.Value,
+                    YedekleniyorMu = chYedekleniyorMu.Checked,
+                    KullaniciAdi = txtKullaniciAdi.Text,
+                    Lisans1 = txtLisans1.Text,
+                    Lisans1Active = txtLisans1Code.Text,
+                    Lisans2 = txtLisans2.Text,
+                    Lisans2Active = txtLisans2Code.Text,
+                    Lisans3 = txtLisans3.Text,
+                    Lisans3Active = txtLisans3Code.Text,
+                    SabitIp1 = txtSabitIP1.Text,
+                    SabitIp2 = txtSabitIP2.Text,
+                    Not1 = txtNot1.Text,
+                    Not2 = txtNot2.Text,
+                    PcIsmi = txtPCAdi.Text,
+                    PcLanMac = txtPCLanMac.Text,
+                    PcWrilessMac = txtPCWrilessMac.Text,
+                    PcYedekMac = txtPCYedekMac.Text,
+                    DcName = txtDcName.Text,
+                    FirmaId = Convert.ToInt32(cbFirmaAdi.SelectedValue),
+                    MakinaId = Convert.ToInt32(cbMakina.SelectedValue),
+                    MarkaId = Convert.ToInt32(cbMarka.SelectedValue)
+                });
+                if (sonuc > 0)
+                {
+                    Temizle();
+                    Yukle();
+                    mesajlar.MesajGuncellendi();
+
+                }
+            }
+
+        }
+
+        private void DgwBilgisayar_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lblId.Text = dgwBilgisayar.CurrentRow.Cells[0].Value.ToString();//ID SEÇ
+            int bilgisayarId = Convert.ToInt32(lblId.Text);//ıd conver yap
+            var bilgisayar = manager.Find(bilgisayarId);//bilgisayar id bul
+                                                        //eşitlemeye başla
+
+            cbDepartman.SelectedValue = bilgisayar.DepartmanId;
+            dateEklemeTarihi.Text = bilgisayar.EklemeTarihi.ToString();
+            chYedekleniyorMu.Checked = bilgisayar.YedekleniyorMu;
+            txtKullaniciAdi.Text = bilgisayar.KullaniciAdi;
+            txtLisans1.Text = bilgisayar.Lisans1;
+            txtLisans1Code.Text = bilgisayar.Lisans1Active;
+            txtLisans2.Text = bilgisayar.Lisans2;
+            txtLisans2Code.Text = bilgisayar.Lisans2Active;
+            txtLisans3.Text = bilgisayar.Lisans3;
+            txtLisans3Code.Text = bilgisayar.Lisans3Active;
+            txtSabitIP1.Text = bilgisayar.SabitIp1;
+            txtSabitIP2.Text = bilgisayar.SabitIp2;
+            txtNot1.Text = bilgisayar.Not1;
+            txtNot2.Text = bilgisayar.Not2;
+            txtPCAdi.Text = bilgisayar.PcIsmi;
+            txtPCLanMac.Text = bilgisayar.PcLanMac;
+            txtPCWrilessMac.Text = bilgisayar.PcWrilessMac;
+            txtPCYedekMac.Text = bilgisayar.PcYedekMac;
+            txtDcName.Text = bilgisayar.DcName;
+            cbFirmaAdi.SelectedValue = bilgisayar.FirmaId;
+            cbMakina.SelectedValue = bilgisayar.MakinaId;
+            cbMarka.SelectedValue = bilgisayar.MarkaId;
+
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            if (lblId.Text == "0")
+            {
+                mesajlar.MesajKayitSec();
+            }
+            else
+            {
+                DialogResult soru;
+                soru = MessageBox.Show("Silmek istediğinizden eminmisiniz", "Uyarı", MessageBoxButtons.YesNo);
+                if (soru == DialogResult.Yes)
+                {
+                    var sonuc = manager.Delete(Convert.ToInt32(lblId.Text));
+                    if (sonuc > 0)
+                    {
+                        Temizle();
+                        Yukle();
+                        mesajlar.MesajSilindi();
+                    }
+                }
+
+
+
+            }
 
         }
     }
