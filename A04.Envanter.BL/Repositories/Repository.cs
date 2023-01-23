@@ -75,5 +75,10 @@ namespace A04.Envanter.BL.Repositories
         {
             return context.SaveChanges();
         }
+
+        public IQueryable<T> GetAllByInclude2(string table, string table2)
+        {
+            return dbSet.Include(table2);
+        }
     }
 }

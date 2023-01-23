@@ -74,14 +74,38 @@
     <Compile Include="DomainYonetimi.Designer.cs">
       <DependentUpon>DomainYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirmaYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmaYonetimi.Designer.cs">
+      <DependentUpon>FirmaYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailYonetimi.Designer.cs">
+      <DependentUpon>MailYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MakinaYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MakinaYonetimi.Designer.cs">
       <DependentUpon>MakinaYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarkaYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkaYonetimi.Designer.cs">
+      <DependentUpon>MarkaYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RolYonetimi.Designer.cs">
+      <DependentUpon>RolYonetimi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BilgisayarYonetimi.resx">
       <DependentUpon>BilgisayarYonetimi.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,8 +115,17 @@
     <EmbeddedResource Include="DomainYonetimi.resx">
       <DependentUpon>DomainYonetimi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FirmaYonetimi.resx">
+      <DependentUpon>FirmaYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailYonetimi.resx">
+      <DependentUpon>MailYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MakinaYonetimi.resx">
       <DependentUpon>MakinaYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkaYonetimi.resx">
+      <DependentUpon>MarkaYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RolYonetimi.resx">
+      <DependentUpon>RolYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

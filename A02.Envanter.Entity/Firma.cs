@@ -17,5 +17,6 @@ namespace A02.Envanter.Entity
         public string Tel2 { get; set; }
         public bool AktifMi { get; set; }
         public string Not { get; set; }
+        public DateTime EklenmeTarihi { get; set; }
     }
 }

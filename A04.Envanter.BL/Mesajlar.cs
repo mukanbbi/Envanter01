@@ -29,5 +29,9 @@ namespace A04.Envanter.BL
         {
             MessageBox.Show("Hata Oluştu.", "Bilgi");
         }
+        public void MesajBosGecilemez()
+        {
+            MessageBox.Show("Boş geçilemez", "Uyarı");
+        }
     }
 }

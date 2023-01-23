@@ -1,6 +1,6 @@
 ﻿namespace A01.Envanter.WindowsApp
 {
-    partial class DomainYonetimi
+    partial class MarkaYonetimi
     {
         /// <summary>
         /// Required designer variable.
@@ -32,13 +32,13 @@
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
-            this.txtDomainAdi = new System.Windows.Forms.TextBox();
+            this.txtMarkaAdi = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgwDomain = new System.Windows.Forms.DataGridView();
+            this.dgwMarka = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwDomain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwMarka)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -46,16 +46,16 @@
             this.groupBox1.Controls.Add(this.btnSil);
             this.groupBox1.Controls.Add(this.btnGuncelle);
             this.groupBox1.Controls.Add(this.btnEkle);
-            this.groupBox1.Controls.Add(this.txtDomainAdi);
+            this.groupBox1.Controls.Add(this.txtMarkaAdi);
             this.groupBox1.Controls.Add(this.lblId);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(250, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(262, 153);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Departman";
+            this.groupBox1.Text = "Marka Türü";
             // 
             // btnSil
             // 
@@ -65,7 +65,6 @@
             this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
-            this.btnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -75,7 +74,6 @@
             this.btnGuncelle.TabIndex = 3;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
-            this.btnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -85,14 +83,13 @@
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
-            this.btnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
-            // txtDomainAdi
+            // txtMarkaAdi
             // 
-            this.txtDomainAdi.Location = new System.Drawing.Point(98, 59);
-            this.txtDomainAdi.Name = "txtDomainAdi";
-            this.txtDomainAdi.Size = new System.Drawing.Size(140, 20);
-            this.txtDomainAdi.TabIndex = 1;
+            this.txtMarkaAdi.Location = new System.Drawing.Point(98, 59);
+            this.txtMarkaAdi.Name = "txtMarkaAdi";
+            this.txtMarkaAdi.Size = new System.Drawing.Size(140, 20);
+            this.txtMarkaAdi.TabIndex = 1;
             // 
             // lblId
             // 
@@ -115,35 +112,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 66);
+            this.label1.Location = new System.Drawing.Point(25, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Domain Adı";
+            this.label1.Text = "Marka Türü";
             // 
-            // dgwDomain
+            // dgwMarka
             // 
-            this.dgwDomain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgwDomain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwDomain.Location = new System.Drawing.Point(12, 12);
-            this.dgwDomain.Name = "dgwDomain";
-            this.dgwDomain.Size = new System.Drawing.Size(232, 239);
-            this.dgwDomain.TabIndex = 5;
-            this.dgwDomain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgwDomain_CellClick);
+            this.dgwMarka.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgwMarka.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwMarka.Location = new System.Drawing.Point(12, 12);
+            this.dgwMarka.Name = "dgwMarka";
+            this.dgwMarka.Size = new System.Drawing.Size(232, 239);
+            this.dgwMarka.TabIndex = 3;
             // 
-            // DomainYonetimi
+            // MarkaYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 290);
+            this.ClientSize = new System.Drawing.Size(544, 291);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgwDomain);
-            this.Name = "DomainYonetimi";
-            this.Text = "DomainYonetimi";
-            this.Load += new System.EventHandler(this.DomainYonetimi_Load);
+            this.Controls.Add(this.dgwMarka);
+            this.Name = "MarkaYonetimi";
+            this.Text = "MarkaYonetimi";
+            this.Load += new System.EventHandler(this.MarkaYonetimi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwDomain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwMarka)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,10 +150,10 @@
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnEkle;
-        private System.Windows.Forms.TextBox txtDomainAdi;
+        private System.Windows.Forms.TextBox txtMarkaAdi;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgwDomain;
+        private System.Windows.Forms.DataGridView dgwMarka;
     }
 }
