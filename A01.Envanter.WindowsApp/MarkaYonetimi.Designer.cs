@@ -65,6 +65,7 @@
             this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -74,6 +75,7 @@
             this.btnGuncelle.TabIndex = 3;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -83,6 +85,7 @@
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
             // txtMarkaAdi
             // 
@@ -126,6 +129,7 @@
             this.dgwMarka.Name = "dgwMarka";
             this.dgwMarka.Size = new System.Drawing.Size(232, 239);
             this.dgwMarka.TabIndex = 3;
+            this.dgwMarka.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgwMarka_CellClick);
             // 
             // MarkaYonetimi
             // 
