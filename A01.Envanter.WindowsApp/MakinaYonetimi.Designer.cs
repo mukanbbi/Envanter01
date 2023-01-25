@@ -37,6 +37,7 @@
             this.lblId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnKapat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwMakina)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -131,11 +132,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Makina Türü";
             // 
+            // btnKapat
+            // 
+            this.btnKapat.BackColor = System.Drawing.Color.Salmon;
+            this.btnKapat.Location = new System.Drawing.Point(364, 211);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(148, 40);
+            this.btnKapat.TabIndex = 12;
+            this.btnKapat.Text = "Kapat";
+            this.btnKapat.UseVisualStyleBackColor = false;
+            this.btnKapat.Click += new System.EventHandler(this.BtnKapat_Click);
+            // 
             // MakinaYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 298);
+            this.ClientSize = new System.Drawing.Size(529, 272);
+            this.Controls.Add(this.btnKapat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgwMakina);
             this.Name = "MakinaYonetimi";
@@ -159,5 +172,6 @@
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnKapat;
     }
 }

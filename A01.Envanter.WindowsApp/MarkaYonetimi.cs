@@ -129,5 +129,11 @@ namespace A01.Envanter.WindowsApp
                 mesajlar.MesajHata();
             }
         }
+
+        private void BtnKapat_Click(object sender, EventArgs e)
+        {
+            MarkaYonetimi markaYonetimi = new MarkaYonetimi();
+            this.Close();
+        }
     }
 }

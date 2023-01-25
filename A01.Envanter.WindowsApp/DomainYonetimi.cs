@@ -20,6 +20,7 @@ namespace A01.Envanter.WindowsApp
         }
         DomainManager manager = new DomainManager();
         Mesajlar mesajlar = new Mesajlar();
+
         void Yukle()
         {
             dgwDomain.DataSource = manager.GetAll();
@@ -133,6 +134,12 @@ namespace A01.Envanter.WindowsApp
 
 
             }
+        }
+
+        private void BtnKapat_Click(object sender, EventArgs e)
+        {
+            DomainYonetimi domainYonetimi = new DomainYonetimi();
+            this.Close();
         }
     }
 }

@@ -36,6 +36,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -56,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="BilgisayarYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +96,18 @@
     <Compile Include="FirmaYonetimi.Designer.cs">
       <DependentUpon>FirmaYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.Designer.cs">
+      <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MailYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,12 +128,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlar\BilgisayarListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar\BilgisayarListe.Designer.cs">
+      <DependentUpon>BilgisayarListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar\KullaniciIstatislik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar\KullaniciIstatislik.Designer.cs">
+      <DependentUpon>KullaniciIstatislik.cs</DependentUpon>
+    </Compile>
     <Compile Include="RolYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RolYonetimi.Designer.cs">
       <DependentUpon>RolYonetimi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BilgisayarYonetimi.resx">
       <DependentUpon>BilgisayarYonetimi.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +161,12 @@
     <EmbeddedResource Include="FirmaYonetimi.resx">
       <DependentUpon>FirmaYonetimi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciYonetimi.resx">
+      <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MailYonetimi.resx">
       <DependentUpon>MailYonetimi.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +176,7 @@
     <EmbeddedResource Include="MarkaYonetimi.resx">
       <DependentUpon>MarkaYonetimi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +186,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Raporlar\BilgisayarListe.resx">
+      <DependentUpon>BilgisayarListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar\KullaniciIstatislik.resx">
+      <DependentUpon>KullaniciIstatislik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RolYonetimi.resx">
       <DependentUpon>RolYonetimi.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +213,10 @@
     <ProjectReference Include="..\A02.Envanter.Entity\A02.Envanter.Entity.csproj">
       <Project>{91c6ae2b-1b17-4cd7-a0ac-b24406fd6f39}</Project>
       <Name>A02.Envanter.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\A03.Envanter.DAL\A03.Envanter.DAL.csproj">
+      <Project>{2B378DF0-C267-42D7-84B7-156B38AC31AE}</Project>
+      <Name>A03.Envanter.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\A04.Envanter.BL\A04.Envanter.BL.csproj">
       <Project>{011b6142-d5d5-4a3b-a82d-3fb9b130a178}</Project>

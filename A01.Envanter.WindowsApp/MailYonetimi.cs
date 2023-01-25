@@ -160,5 +160,11 @@ namespace A01.Envanter.WindowsApp
             
                 
         }
+
+        private void BtnKapat_Click(object sender, EventArgs e)
+        {
+            MailYonetimi mailYonetimi = new MailYonetimi();
+            this.Close();
+        }
     }
 }

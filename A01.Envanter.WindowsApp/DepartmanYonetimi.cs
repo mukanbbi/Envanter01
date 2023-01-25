@@ -120,5 +120,11 @@ namespace A01.Envanter.WindowsApp
                 
             }
         }
+
+        private void BtnKapat_Click(object sender, EventArgs e)
+        {
+            DepartmanYonetimi departmanYonetimi = new DepartmanYonetimi();
+            this.Close();
+        }
     }
 }

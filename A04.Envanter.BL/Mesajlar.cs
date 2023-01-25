@@ -11,27 +11,27 @@ namespace A04.Envanter.BL
     {
         public void MesajSilindi()
         {
-            MessageBox.Show("Kayıt Silindi.", "Bilgi");
+            MessageBox.Show("Kayıt Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void MesajEklendi()
         {
-            MessageBox.Show("Kayıt Eklendi.", "Bilgi");
+            MessageBox.Show("Kayıt Eklendi.", "Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
         public void MesajGuncellendi()
         {
-            MessageBox.Show("Kayıt Güncellendi.", "Bilgi");
+            MessageBox.Show("Kayıt Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void MesajKayitSec()
         {
-            MessageBox.Show("Lütfen Listeden Bir Kayıt Seçiniz.", "Bilgi");
+            MessageBox.Show("Lütfen Listeden Bir Kayıt Seçiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public void MesajHata()
         {
-            MessageBox.Show("Hata Oluştu.", "Bilgi");
+            MessageBox.Show("Hata Oluştu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         public void MesajBosGecilemez()
         {
-            MessageBox.Show("Boş geçilemez", "Uyarı");
+            MessageBox.Show("Boş geçilemez", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

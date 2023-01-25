@@ -20,5 +20,7 @@ namespace A04.Envanter.BL.Repositories
         int Update(T entity);
 
         int Delete(int id);
+        
+
     }
 }

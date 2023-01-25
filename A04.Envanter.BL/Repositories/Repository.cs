@@ -80,5 +80,7 @@ namespace A04.Envanter.BL.Repositories
         {
             return dbSet.Include(table2);
         }
+
+      
     }
 }

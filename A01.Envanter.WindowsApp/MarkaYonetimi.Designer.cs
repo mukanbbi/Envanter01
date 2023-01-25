@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgwMarka = new System.Windows.Forms.DataGridView();
+            this.btnKapat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwMarka)).BeginInit();
             this.SuspendLayout();
@@ -131,11 +132,23 @@
             this.dgwMarka.TabIndex = 3;
             this.dgwMarka.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgwMarka_CellClick);
             // 
+            // btnKapat
+            // 
+            this.btnKapat.BackColor = System.Drawing.Color.Salmon;
+            this.btnKapat.Location = new System.Drawing.Point(364, 211);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(148, 40);
+            this.btnKapat.TabIndex = 12;
+            this.btnKapat.Text = "Kapat";
+            this.btnKapat.UseVisualStyleBackColor = false;
+            this.btnKapat.Click += new System.EventHandler(this.BtnKapat_Click);
+            // 
             // MarkaYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 291);
+            this.ClientSize = new System.Drawing.Size(519, 274);
+            this.Controls.Add(this.btnKapat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgwMarka);
             this.Name = "MarkaYonetimi";
@@ -159,5 +172,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgwMarka;
+        private System.Windows.Forms.Button btnKapat;
     }
 }

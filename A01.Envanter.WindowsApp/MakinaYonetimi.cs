@@ -123,5 +123,11 @@ namespace A01.Envanter.WindowsApp
                 mesajlar.MesajHata();
             }
         }
+
+        private void BtnKapat_Click(object sender, EventArgs e)
+        {
+            MakinaYonetimi makinaYonetimi = new MakinaYonetimi();
+            this.Close();
+        }
     }
 }

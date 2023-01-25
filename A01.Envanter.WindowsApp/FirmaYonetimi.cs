@@ -92,7 +92,10 @@ namespace A01.Envanter.WindowsApp
             if (lblId.Text=="0")
             {
                 mesajlar.MesajKayitSec();
+                
             }
+           
+            
             else
             {
                 var yeni = manager.Update(
@@ -142,6 +145,12 @@ namespace A01.Envanter.WindowsApp
             
            
             
+        }
+
+        private void BtnKapat_Click(object sender, EventArgs e)
+        {
+            FirmaYonetimi firmaYonetimi = new FirmaYonetimi();
+            this.Close();
         }
     }
 }
